@@ -1,0 +1,43 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+How do the diagrams help you visualize the branch structure?
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+What are the pros and cons of Gitâ€™s automatic merging vs. always doing merges
+manually?
+
+
+....
+
+Notes about git:
+
+git log --graph --oneline master coins
+
+
+When I delete a branch:
+
+If a branch is deleted and leaves some commits unreachable from existing branches, those commits will continue to be accessible by commit id, until Git’s garbage collection runs. This will happen automatically from time to time, unless you actively turn it off. You can also run this process manually with git gc.
+
+
+For abort merge
+
+git merge --abort
+
+
+To compare a commit to its parent is git show commit_id
+
+
+Only ask first time password:
+
+https://help.github.com/articles/caching-your-github-password-in-git/
